@@ -1,0 +1,149 @@
+<!doctype html>
+
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>JavaScript</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
+    <link href='css/style.css' rel='stylesheet'>
+  </head>
+
+  <body>
+
+    <div class="menu">
+      
+      <!-- Menu icon -->
+      <div class="icon-close">
+        <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
+      </div>
+
+      <!-- Menu -->
+      <ul>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./help.html">Help</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+      </ul>
+    </div>
+
+    <!-- Main body -->
+    <div class="jumbotron_js">
+
+      <div class="icon-menu">
+        <i class="fa fa-bars"></i>
+        JavaScript
+      </div>
+    
+
+      <!-- Change Content -->
+      <h2>Changing HTML content by clicking a button</h2>
+      <h3 id="changeContent">Unchanged Content</h3>
+      <button type="button">Click Me!</button>
+
+      <!-- Hide Content -->
+      <h2>Hide content by clicking</h2>
+      <p>one click to hide</p>
+      <p>one click to hide </p>
+      <div id="dblClickHide">double click to hide</div>
+
+      <!-- Mousenter -->
+      <h2>Mouse Enter</h2>
+      <div id="p1">mouse enter</div>
+
+      <!-- Mouse Hover -->
+      <h2>Mouse Hover</h2>
+      <div id="p2">mouse hover</div>
+
+      <!--Change color when clicking  -->
+      <h2>Change Color</h2>
+      <div id="">
+        Name: <input type="text" name="fullname"><br>
+        Email: <input type="text" name="email">
+      </div>
+      
+      <!-- On event-->
+      <h2>Hide by using 'on'</h2>
+      <section>one click to hide</section>
+
+      
+      <!-- Show and Hide -->
+      <h2>Show and Hide</h2>
+      <p id="par">If you click on the "Hide" button, I will disappear. If you click on the "Show" button, I will re-appear after 3 seconds.</p>
+
+      <button id="hide">Hide</button>
+      <button id="show">Show</button>
+
+
+      <!-- Toggle event -->
+      <h2>Toggle</h2>
+      <p id="parToggle">If you click on the "Toggle button", I will disappear. If you click on the "Toggle button", I will re-appear.</p>
+
+      <button id="tog">Toggle Button</button>
+
+      <!-- Fade in -->
+      <h2>Fade in</h2>
+      <button id="fadeIn">Click to fade in boxes</button><br><br>
+
+      <div id="div1" style="width:80px;height:80px;display:none;background-color:red"></div><br>
+      <div id="div2" style="width:80px;height:80px;display:none;background-color:green"></div><br>
+      <div id="div3" style="width:80px;height:80px;display:none;background-color:blue"></div>
+
+      <!-- Fade in -->
+      <h2>Fade out</h2>
+      <button id="fadeOut">Click to fade out red box</button><br><br>
+
+      <div id="divRed" style="width:80px;height:80px;background-color:red"></div>
+
+      <!-- Fade to -->
+      <h2>Fade to</h2>
+      <button id="fadeTo">Click to fade to blue box</button><br><br>
+
+      <div id="divBlue" style="width:80px;height:80px;background-color:blue"></div>
+
+
+      <!-- Fade to -->
+      <h2>Slide Toggle</h2>
+      <div id="flip" style="padding: 5px;text-align: center;background-color: #e5eecc;border: solid 1px #c3c3c3">Click to slide the panel down or up</div>
+      <div id="panel" style="padding: 50px;display: none;text-align: center;background-color: #e5eecc;border: solid 1px #c3c3c3">Hello world!</div>
+
+      <!-- Animate -->
+      <h2>Animate</h2>
+      <button id="animate1">Start Animation</button>
+
+      <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+      <div id="box-animate1" style="background:#98bf21;height:100px;width:100px;position:relative;"></div>
+
+      <!-- Call Back Functions-->
+      <h2>Callback Functions</h2>
+      <button id="callback">Hide</button>
+
+      <p id="par">This is a paragraph with little content.</p>
+
+      <!-- Chaining-->
+      <h2>Chaining</h2>
+
+      <p id="parchain">jQuery!!</p>
+     
+      <button id="chain">Up/Down</button>
+
+      <!-- Get-->
+      <h2>Get Value</h2>
+      <p>Name: <input type="text" id="test" value="Enter Name"></p>
+      <button id="alertInput">Show Value</button>
+      
+      <h2>Get Attribute</h2>
+      <p><a href="https://www.hbo.com" id="url">hbo.com</a></p>
+      <button id="alertUrl">Show URL</button>
+      
+    </div>		
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+  </body>
+
+</html>
