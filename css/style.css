@@ -28,6 +28,12 @@ body {
           background-size: cover;
 }
 
+.homeHeader {
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+}
+
 .jumbotron_about {
   /*background-image: url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/bg.png');*/ 
   background-image: url('../images/sky2.jpg'); 
@@ -36,6 +42,12 @@ body {
      -moz-background-size: cover;
        -o-background-size: cover;
           background-size: cover;
+}
+
+.aboutHeader {
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
 }
 
 .jumbotron_contact {
@@ -48,6 +60,18 @@ body {
           background-size: cover;
 }
 
+.contactHeader {
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.contactHeader {
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+}
+
 .jumbotron_help {
   /*background-image: url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/bg.png');*/ 
   background-image: url('../images/metal.jpg'); 
@@ -56,6 +80,12 @@ body {
      -moz-background-size: cover;
        -o-background-size: cover;
           background-size: cover;
+}
+
+.helpHeader {
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
 }
 
 .jumbotron_js {
@@ -69,6 +99,12 @@ body {
           background-size: cover;
 }
 
+.aboutJS {
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+}
+
 .jumbotron_blog {
   /*background-image: url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/bg.png');*/ 
   background-image: url('../images/boards.jpg'); 
@@ -77,6 +113,12 @@ body {
      -moz-background-size: cover;
        -o-background-size: cover;
           background-size: cover;
+}
+
+.blogHeader {
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
 }
 
 .menu ul {
@@ -138,13 +180,16 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-    background-color: #4CAF50;
+    background-color: blue;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 8px 10px;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 30%;
+    border: none;
+    border-radius: 16px;
+
 }
 
 button:hover {
@@ -178,6 +223,60 @@ span.psw {
     float: right;
     padding-top: 16px;
 }
+
+
+/* Member Login Page */
+.header {
+    background-color: grey;
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+}
+
+/* Container for flexboxes */
+.row {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* Create three unequal columns that sits next to each other */
+.column {
+    padding: 50px;
+    height: 80px; /* Should be removed. Only for demonstration */
+    text-align: center;
+}
+
+/* Left and right column */
+.column.side {
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+}
+
+/* Middle column */
+.column.middle {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+}
+
+
+
 
 /* The Modal (background) */
 .modal {

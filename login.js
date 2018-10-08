@@ -19,16 +19,12 @@ $("#login").on("click", function() {
     checkUser = $("#UserId").val().trim();
     checkPassword = $("#passWord").val().trim();
 
-// console.log(checkUser);
-// console.log(checkPassword);
-
     if (checkUser === "analydia" && checkPassword === "shooks" ||
         checkUser === "jorge" && checkPassword === "caro" ||
         checkUser === "glen" && checkPassword === "shooks") {
         
         window.open('index.html');
-        // window.open("https://www.youtube.com/watch?v=l-O5IHVhWj0", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
-
+       
     } else {
     alert("Incorrect username or password, Please try again")
     }
